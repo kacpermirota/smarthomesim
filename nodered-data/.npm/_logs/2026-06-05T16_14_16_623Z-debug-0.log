@@ -1,0 +1,547 @@
+0 verbose cli /usr/local/bin/node /usr/src/node-red/node_modules/.bin/npm
+1 info using npm@10.9.8
+2 info using node@v20.20.2
+3 silly config load:file:/usr/src/node-red/node_modules/npm/npmrc
+4 silly config load:file:/usr/src/node-red/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm install node-red-contrib-influxdb
+7 verbose argv "install" "node-red-contrib-influxdb"
+8 verbose logfile logs-max:10 dir:/data/.npm/_logs/2026-06-05T16_14_16_623Z-
+9 verbose logfile /data/.npm/_logs/2026-06-05T16_14_16_623Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+12 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+13 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+14 http fetch GET 200 https://registry.npmjs.org/npm 397ms
+15 silly idealTree buildDeps
+16 silly fetch manifest node-red-contrib-influxdb@*
+17 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-influxdb cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-influxdb 294ms (cache miss)
+19 silly packumentCache full:https://registry.npmjs.org/node-red-contrib-influxdb set size:undefined disposed:false
+20 silly placeDep ROOT node-red-contrib-influxdb@0.7.0 OK for: node-red-docker@4.1.11 want: *
+21 silly fetch manifest influx@~5.9.3
+22 silly packumentCache full:https://registry.npmjs.org/influx cache-miss
+23 silly fetch manifest @influxdata/influxdb-client@~1.33.2
+24 silly packumentCache full:https://registry.npmjs.org/@influxdata%2finfluxdb-client cache-miss
+25 silly fetch manifest lodash@~4.17.21
+26 silly packumentCache full:https://registry.npmjs.org/lodash cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/lodash 175ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/lodash set size:undefined disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/influx 279ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/influx set size:undefined disposed:false
+31 http fetch GET 200 https://registry.npmjs.org/@influxdata%2finfluxdb-client 640ms (cache miss)
+32 silly packumentCache full:https://registry.npmjs.org/@influxdata%2finfluxdb-client set size:undefined disposed:false
+33 silly placeDep ROOT @influxdata/influxdb-client@1.33.2 OK for: node-red-contrib-influxdb@0.7.0 want: ~1.33.2
+34 silly placeDep ROOT influx@5.9.7 OK for: node-red-contrib-influxdb@0.7.0 want: ~5.9.3
+35 silly placeDep ROOT lodash@4.17.23 OK for: node-red-contrib-influxdb@0.7.0 want: ~4.17.21
+36 silly reify moves {}
+37 silly audit bulk request {
+37 silly audit   'abort-controller': [ '3.0.0' ],
+37 silly audit   accepts: [ '1.3.8' ],
+37 silly audit   acorn: [ '8.16.0' ],
+37 silly audit   abbrev: [ '1.1.1', '3.0.1' ],
+37 silly audit   'acorn-walk': [ '8.3.5' ],
+37 silly audit   'agent-base': [ '6.0.2', '7.1.4' ],
+37 silly audit   debug: [ '4.4.3', '2.6.9' ],
+37 silly audit   ms: [ '2.1.3', '2.0.0' ],
+37 silly audit   'ansi-colors': [ '4.1.3' ],
+37 silly audit   'ansi-regex': [ '5.0.1', '6.2.2' ],
+37 silly audit   'append-field': [ '1.0.0' ],
+37 silly audit   'ansi-styles': [ '4.3.0', '6.2.3' ],
+37 silly audit   argparse: [ '2.0.1' ],
+37 silly audit   'array-flatten': [ '1.1.1' ],
+37 silly audit   'async-mutex': [ '0.5.0' ],
+37 silly audit   asynckit: [ '0.4.0' ],
+37 silly audit   'base64-js': [ '1.5.1' ],
+37 silly audit   bcryptjs: [ '3.0.3' ],
+37 silly audit   axios: [ '1.16.0' ],
+37 silly audit   'form-data': [ '4.0.5', '4.0.4' ],
+37 silly audit   'basic-auth': [ '2.0.1' ],
+37 silly audit   bl: [ '6.1.6' ],
+37 silly audit   ajv: [ '8.18.0' ],
+37 silly audit   boolbase: [ '1.0.0' ],
+37 silly audit   'body-parser': [ '1.20.5' ],
+37 silly audit   'iconv-lite': [ '0.4.24', '0.6.3' ],
+37 silly audit   'raw-body': [ '2.5.3', '3.0.0' ],
+37 silly audit   'buffer-from': [ '1.1.2' ],
+37 silly audit   buffer: [ '6.0.3' ],
+37 silly audit   busboy: [ '1.6.0' ],
+37 silly audit   'broker-factory': [ '3.1.14' ],
+37 silly audit   bytes: [ '3.1.2' ],
+37 silly audit   'cacheable-lookup': [ '7.0.0' ],
+37 silly audit   'cacheable-request': [ '10.2.14' ],
+37 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+37 silly audit   'call-bound': [ '1.0.4' ],
+37 silly audit   chalk: [ '4.1.2', '5.6.2' ],
+37 silly audit   'cheerio-select': [ '1.6.0' ],
+37 silly audit   cheerio: [ '1.0.0-rc.10' ],
+37 silly audit   chownr: [ '3.0.0' ],
+37 silly audit   'cli-table': [ '0.3.11' ],
+37 silly audit   clone: [ '2.1.2' ],
+37 silly audit   'color-convert': [ '2.0.1' ],
+37 silly audit   'color-name': [ '1.1.4' ],
+37 silly audit   colors: [ '1.0.3' ],
+37 silly audit   'combined-stream': [ '1.0.8' ],
+37 silly audit   'concat-stream': [ '2.0.0' ],
+37 silly audit   'readable-stream': [ '3.6.2', '4.7.0' ],
+37 silly audit   commist: [ '3.2.0' ],
+37 silly audit   'content-disposition': [ '0.5.4' ],
+37 silly audit   'safe-buffer': [ '5.2.1', '5.1.2' ],
+37 silly audit   'content-type': [ '1.0.5' ],
+37 silly audit   'cookie-parser': [ '1.4.7' ],
+37 silly audit   cookie: [ '0.7.2' ],
+37 silly audit   'cookie-signature': [ '1.0.6', '1.0.7' ],
+37 silly audit   cors: [ '2.8.5' ],
+37 silly audit   'css-select': [ '4.3.0' ],
+37 silly audit   'decompress-response': [ '6.0.0' ],
+37 silly audit   'mimic-response': [ '3.1.0', '4.0.0' ],
+37 silly audit   'css-what': [ '6.2.2' ],
+37 silly audit   'defer-to-connect': [ '2.0.1' ],
+37 silly audit   'delayed-stream': [ '1.0.0' ],
+37 silly audit   cronosjs: [ '1.7.1' ],
+37 silly audit   denque: [ '2.1.0' ],
+37 silly audit   depd: [ '2.0.0' ],
+37 silly audit   destroy: [ '1.2.0' ],
+37 silly audit   'dom-serializer': [ '1.4.1' ],
+37 silly audit   domelementtype: [ '2.3.0' ],
+37 silly audit   domhandler: [ '4.3.1' ],
+37 silly audit   domutils: [ '2.8.0' ],
+37 silly audit   'dunder-proto': [ '1.0.1' ],
+37 silly audit   'ee-first': [ '1.1.1' ],
+37 silly audit   encodeurl: [ '2.0.0' ],
+37 silly audit   enquirer: [ '2.4.1' ],
+37 silly audit   entities: [ '2.2.0' ],
+37 silly audit   'es-define-property': [ '1.0.1' ],
+37 silly audit   'es-object-atoms': [ '1.1.2' ],
+37 silly audit   'escape-html': [ '1.0.3' ],
+37 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+37 silly audit   'es-errors': [ '1.3.0' ],
+37 silly audit   events: [ '3.3.0' ],
+37 silly audit   'event-target-shim': [ '5.0.1' ],
+37 silly audit   etag: [ '1.8.1' ],
+37 silly audit   express: [ '4.22.2' ],
+37 silly audit   'express-session': [ '1.18.2' ],
+37 silly audit   'fast-deep-equal': [ '3.1.3' ],
+37 silly audit   'fast-unique-numbers': [ '9.0.27' ],
+37 silly audit   finalhandler: [ '1.3.2' ],
+37 silly audit   'follow-redirects': [ '1.16.0' ],
+37 silly audit   'fast-uri': [ '3.1.2' ],
+37 silly audit   'form-data-encoder': [ '2.1.4' ],
+37 silly audit   forwarded: [ '0.2.0' ],
+37 silly audit   'fs-extra': [ '11.3.0' ],
+37 silly audit   fresh: [ '0.5.2' ],
+37 silly audit   'function-bind': [ '1.1.2' ],
+37 silly audit   'get-stream': [ '6.0.1' ],
+37 silly audit   'get-intrinsic': [ '1.3.0' ],
+37 silly audit   'get-proto': [ '1.0.1' ],
+37 silly audit   'graceful-fs': [ '4.2.11' ],
+37 silly audit   gopd: [ '1.2.0' ],
+37 silly audit   got: [ '12.6.1' ],
+37 silly audit   'has-flag': [ '4.0.0' ],
+37 silly audit   'has-symbols': [ '1.1.0' ],
+37 silly audit   'hash-sum': [ '2.0.0' ],
+37 silly audit   'has-tostringtag': [ '1.0.2' ],
+37 silly audit   hasown: [ '2.0.4' ],
+37 silly audit   'help-me': [ '5.0.0' ],
+37 silly audit   hpagent: [ '1.2.0' ],
+37 silly audit   htmlparser2: [ '6.1.0' ],
+37 silly audit   'http-cache-semantics': [ '4.2.0' ],
+37 silly audit   'http-errors': [ '2.0.1', '2.0.0' ],
+37 silly audit   'http2-wrapper': [ '2.2.1' ],
+37 silly audit   'https-proxy-agent': [ '5.0.1', '7.0.6' ],
+37 silly audit   i18next: [ '25.8.14' ],
+37 silly audit   inherits: [ '2.0.4' ],
+37 silly audit   'ipaddr.js': [ '1.9.1' ],
+37 silly audit   'ip-address': [ '10.2.0', '10.1.0' ],
+37 silly audit   ieee754: [ '1.2.1' ],
+37 silly audit   'js-yaml': [ '4.1.1' ],
+37 silly audit   'js-sdsl': [ '4.3.0' ],
+37 silly audit   'json-buffer': [ '3.0.1' ],
+37 silly audit   'is-utf8': [ '0.2.1' ],
+37 silly audit   'json-schema-traverse': [ '1.0.0' ],
+37 silly audit   'json-stringify-safe': [ '5.0.1' ],
+37 silly audit   jsonfile: [ '6.2.1' ],
+37 silly audit   jsonata: [ '2.0.6' ],
+37 silly audit   keyv: [ '4.5.4' ],
+37 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+37 silly audit   'lru-cache': [ '4.1.5', '10.4.3' ],
+37 silly audit   'lowercase-keys': [ '3.0.0' ],
+37 silly audit   'math-intrinsics': [ '1.1.0' ],
+37 silly audit   'merge-descriptors': [ '1.0.3' ],
+37 silly audit   methods: [ '1.1.2' ],
+37 silly audit   'media-typer': [ '1.1.0', '0.3.0' ],
+37 silly audit   memorystore: [ '1.6.7' ],
+37 silly audit   'mime-db': [ '1.52.0' ],
+37 silly audit   mime: [ '3.0.0', '1.6.0' ],
+37 silly audit   'mime-types': [ '2.1.35' ],
+37 silly audit   minimist: [ '1.2.8' ],
+37 silly audit   minizlib: [ '3.1.0' ],
+37 silly audit   moment: [ '2.30.1' ],
+37 silly audit   'moment-timezone': [ '0.5.48' ],
+37 silly audit   mqtt: [ '5.15.1' ],
+37 silly audit   ws: [ '8.21.0', '7.5.10' ],
+37 silly audit   minipass: [ '7.1.3', '3.3.6' ],
+37 silly audit   'mqtt-packet': [ '9.0.2' ],
+37 silly audit   multer: [ '2.1.1' ],
+37 silly audit   mustache: [ '4.2.0' ],
+37 silly audit   'mute-stream': [ '1.0.0', '2.0.0' ],
+37 silly audit   negotiator: [ '0.6.3', '1.0.0' ],
+37 silly audit   'node-red': [ '4.1.11' ],
+37 silly audit   'node-watch': [ '0.7.4' ],
+37 silly audit   'node-red-admin': [ '4.1.6' ],
+37 silly audit   nopt: [ '5.0.0', '8.1.0' ],
+37 silly audit   'normalize-url': [ '8.1.1' ],
+37 silly audit   'nth-check': [ '2.1.1' ],
+37 silly audit   'number-allocator': [ '1.0.14' ],
+37 silly audit   npm: [ '10.9.8' ],
+37 silly audit   which: [ '2.0.2', '5.0.0' ],
+37 silly audit   'emoji-regex': [ '8.0.0', '9.2.2' ],
+37 silly audit   isexe: [ '2.0.0', '3.1.5' ],
+37 silly audit   yallist: [ '5.0.0', '2.1.2', '4.0.0' ],
+37 silly audit   pacote: [ '19.0.2', '20.0.1' ],
+37 silly audit   read: [ '3.0.1', '4.1.0' ],
+37 silly audit   'safer-buffer': [ '2.1.2' ],
+37 silly audit   semver: [ '7.7.4' ],
+37 silly audit   'smart-buffer': [ '4.2.0' ],
+37 silly audit   socks: [ '2.8.9', '2.8.7' ],
+37 silly audit   'spdx-expression-parse': [ '3.0.1', '4.0.0' ],
+37 silly audit   'string-width': [ '4.2.3', '5.1.2' ],
+37 silly audit   'strip-ansi': [ '6.0.1', '7.2.0' ],
+37 silly audit   'supports-color': [ '7.2.0', '9.4.0' ],
+37 silly audit   tar: [ '7.5.12', '7.5.11' ],
+37 silly audit   'util-deprecate': [ '1.0.2' ],
+37 silly audit   'validate-npm-package-name': [ '7.0.2', '6.0.2' ],
+37 silly audit   'wrap-ansi': [ '7.0.0', '8.1.0' ],
+37 silly audit   '@isaacs/fs-minipass': [ '4.0.1' ],
+37 silly audit   oauth2orize: [ '1.12.0' ],
+37 silly audit   'object-inspect': [ '1.13.4' ],
+37 silly audit   'object-assign': [ '4.1.1' ],
+37 silly audit   'on-finished': [ '2.4.1' ],
+37 silly audit   'on-headers': [ '1.1.0' ],
+37 silly audit   'p-cancelable': [ '3.0.0' ],
+37 silly audit   'parse5-htmlparser2-tree-adapter': [ '6.0.1' ],
+37 silly audit   parse5: [ '6.0.1' ],
+37 silly audit   parseurl: [ '1.3.3' ],
+37 silly audit   passport: [ '0.7.0' ],
+37 silly audit   'passport-oauth2-client-password': [ '0.1.2' ],
+37 silly audit   'passport-strategy': [ '1.0.0' ],
+37 silly audit   'passport-http-bearer': [ '1.0.1' ],
+37 silly audit   'path-to-regexp': [ '0.1.13' ],
+37 silly audit   pause: [ '0.0.1' ],
+37 silly audit   'process-nextick-args': [ '2.0.1' ],
+37 silly audit   'proxy-addr': [ '2.0.7' ],
+37 silly audit   process: [ '0.11.10' ],
+37 silly audit   'quick-lru': [ '5.1.1' ],
+37 silly audit   pseudomap: [ '1.0.2' ],
+37 silly audit   'proxy-from-env': [ '2.1.0' ],
+37 silly audit   qs: [ '6.15.2' ],
+37 silly audit   'range-parser': [ '1.2.1' ],
+37 silly audit   'random-bytes': [ '1.0.0' ],
+37 silly audit   statuses: [ '2.0.1', '2.0.2' ],
+37 silly audit   'require-from-string': [ '2.0.2' ],
+37 silly audit   'resolve-alpn': [ '1.2.1' ],
+37 silly audit   responselike: [ '3.0.0' ],
+37 silly audit   rfdc: [ '1.4.1' ],
+37 silly audit   sax: [ '1.6.0' ],
+37 silly audit   send: [ '0.19.2' ],
+37 silly audit   'serve-static': [ '1.16.3' ],
+37 silly audit   setprototypeof: [ '1.2.0' ],
+37 silly audit   'side-channel': [ '1.1.0' ],
+37 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+37 silly audit   'side-channel-list': [ '1.0.1' ],
+37 silly audit   'side-channel-map': [ '1.0.1' ],
+37 silly audit   streamsearch: [ '1.1.0' ],
+37 silly audit   string_decoder: [ '1.3.0' ],
+37 silly audit   split2: [ '4.2.0' ],
+37 silly audit   tldts: [ '6.1.86' ],
+37 silly audit   'tldts-core': [ '6.1.86' ],
+37 silly audit   toidentifier: [ '1.0.1' ],
+37 silly audit   'tough-cookie': [ '5.1.2' ],
+37 silly audit   tslib: [ '2.8.1' ],
+37 silly audit   'type-is': [ '1.6.18' ],
+37 silly audit   typedarray: [ '0.0.6' ],
+37 silly audit   'uglify-js': [ '3.19.3' ],
+37 silly audit   'uid-safe': [ '2.1.5' ],
+37 silly audit   uid2: [ '0.0.4' ],
+37 silly audit   universalify: [ '2.0.1' ],
+37 silly audit   'undici-types': [ '7.24.6' ],
+37 silly audit   unpipe: [ '1.0.0' ],
+37 silly audit   'utils-merge': [ '1.0.1' ],
+37 silly audit   vary: [ '1.1.2' ],
+37 silly audit   'worker-factory': [ '7.0.49' ],
+37 silly audit   'worker-timers-broker': [ '8.0.16' ],
+37 silly audit   'worker-timers-worker': [ '9.0.14' ],
+37 silly audit   'worker-timers': [ '8.0.31' ],
+37 silly audit   xml2js: [ '0.6.2' ],
+37 silly audit   xmlbuilder: [ '11.0.1' ],
+37 silly audit   '@node-red/editor-api': [ '4.1.11' ],
+37 silly audit   '@node-red/editor-client': [ '4.1.11' ],
+37 silly audit   '@node-red/nodes': [ '4.1.11' ],
+37 silly audit   '@node-red/runtime': [ '4.1.11' ],
+37 silly audit   '@node-red/registry': [ '4.1.11' ],
+37 silly audit   '@node-red/util': [ '4.1.11' ],
+37 silly audit   '@node-rs/bcrypt': [ '1.10.7' ],
+37 silly audit   '@node-rs/bcrypt-linux-x64-musl': [ '1.10.7' ],
+37 silly audit   '@sindresorhus/is': [ '5.6.0' ],
+37 silly audit   '@szmarczak/http-timer': [ '5.0.1' ],
+37 silly audit   '@types/node': [ '25.9.1' ],
+37 silly audit   '@babel/runtime': [ '7.29.7' ],
+37 silly audit   '@types/ws': [ '8.18.1' ],
+37 silly audit   '@types/readable-stream': [ '4.0.23' ],
+37 silly audit   '@types/http-cache-semantics': [ '4.2.0' ],
+37 silly audit   'node-red-contrib-influxdb': [ '0.7.0' ],
+37 silly audit   '@influxdata/influxdb-client': [ '1.33.2' ],
+37 silly audit   influx: [ '5.9.7' ],
+37 silly audit   lodash: [ '4.17.23' ],
+37 silly audit   'balanced-match': [ '1.0.2' ],
+37 silly audit   'bin-links': [ '5.0.0' ],
+37 silly audit   'brace-expansion': [ '2.0.2' ],
+37 silly audit   archy: [ '1.0.0' ],
+37 silly audit   cacache: [ '19.0.1' ],
+37 silly audit   aproba: [ '2.1.0' ],
+37 silly audit   'binary-extensions': [ '2.3.0' ],
+37 silly audit   'ci-info': [ '4.4.0' ],
+37 silly audit   'cmd-shim': [ '7.0.0' ],
+37 silly audit   'cidr-regex': [ '4.1.3' ],
+37 silly audit   'cli-columns': [ '4.0.0' ],
+37 silly audit   'common-ancestor-path': [ '1.0.1' ],
+37 silly audit   cssesc: [ '3.0.0' ],
+37 silly audit   'cross-spawn': [ '7.0.6' ],
+37 silly audit   encoding: [ '0.1.13' ],
+37 silly audit   diff: [ '5.2.2' ],
+37 silly audit   eastasianwidth: [ '0.2.0' ],
+37 silly audit   'err-code': [ '2.0.3' ],
+37 silly audit   'env-paths': [ '2.2.1' ],
+37 silly audit   'exponential-backoff': [ '3.1.3' ],
+37 silly audit   'fs-minipass': [ '3.0.3' ],
+37 silly audit   'fastest-levenshtein': [ '1.0.16' ],
+37 silly audit   glob: [ '10.5.0' ],
+37 silly audit   'hosted-git-info': [ '8.1.0' ],
+37 silly audit   'http-proxy-agent': [ '7.0.2' ],
+37 silly audit   'ignore-walk': [ '7.0.0' ],
+37 silly audit   imurmurhash: [ '0.1.4' ],
+37 silly audit   ini: [ '5.0.0' ],
+37 silly audit   fdir: [ '6.5.0' ],
+37 silly audit   'foreground-child': [ '3.3.1' ],
+37 silly audit   'init-package-json': [ '7.0.2' ],
+37 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+37 silly audit   'ip-regex': [ '5.0.0' ],
+37 silly audit   'json-parse-even-better-errors': [ '4.0.0' ],
+37 silly audit   'json-stringify-nice': [ '1.1.4' ],
+37 silly audit   jsonparse: [ '1.3.1' ],
+37 silly audit   'just-diff': [ '6.0.2' ],
+37 silly audit   'just-diff-apply': [ '5.5.0' ],
+37 silly audit   'is-cidr': [ '5.1.1' ],
+37 silly audit   jackspeak: [ '3.4.3' ],
+37 silly audit   libnpmfund: [ '6.0.5' ],
+37 silly audit   libnpmaccess: [ '9.0.0' ],
+37 silly audit   libnpmdiff: [ '7.0.5' ],
+37 silly audit   libnpmexec: [ '9.0.5' ],
+37 silly audit   libnpmhook: [ '11.0.0' ],
+37 silly audit   libnpmpack: [ '8.0.5' ],
+37 silly audit   libnpmorg: [ '7.0.0' ],
+37 silly audit   'make-fetch-happen': [ '14.0.3' ],
+37 silly audit   libnpmpublish: [ '10.0.2' ],
+37 silly audit   minimatch: [ '9.0.9' ],
+37 silly audit   'minipass-fetch': [ '4.0.1' ],
+37 silly audit   'minipass-collect': [ '2.0.1' ],
+37 silly audit   'minipass-flush': [ '1.0.5' ],
+37 silly audit   'minipass-pipeline': [ '1.2.4' ],
+37 silly audit   'minipass-sized': [ '1.0.3' ],
+37 silly audit   libnpmsearch: [ '8.0.0' ],
+37 silly audit   libnpmversion: [ '7.0.0' ],
+37 silly audit   libnpmteam: [ '7.0.0' ],
+37 silly audit   'npm-audit-report': [ '6.0.0' ],
+37 silly audit   'npm-bundled': [ '4.0.0' ],
+37 silly audit   'npm-install-checks': [ '7.1.2' ],
+37 silly audit   'npm-normalize-package-bin': [ '4.0.0' ],
+37 silly audit   'npm-package-arg': [ '12.0.2' ],
+37 silly audit   'npm-packlist': [ '9.0.0' ],
+37 silly audit   'npm-pick-manifest': [ '10.0.0' ],
+37 silly audit   'npm-registry-fetch': [ '18.0.2' ],
+37 silly audit   'node-gyp': [ '11.5.0' ],
+37 silly audit   'normalize-package-data': [ '7.0.1' ],
+37 silly audit   'npm-profile': [ '11.0.1' ],
+37 silly audit   'parse-conflict-json': [ '4.0.0' ],
+37 silly audit   'npm-user-validate': [ '3.0.0' ],
+37 silly audit   'path-scurry': [ '1.11.1' ],
+37 silly audit   'path-key': [ '3.1.1' ],
+37 silly audit   'postcss-selector-parser': [ '7.1.1' ],
+37 silly audit   'proc-log': [ '5.0.0' ],
+37 silly audit   proggy: [ '3.0.0' ],
+37 silly audit   'promise-all-reject-late': [ '1.0.1' ],
+37 silly audit   'promise-call-limit': [ '3.0.2' ],
+37 silly audit   'promise-retry': [ '2.0.1' ],
+37 silly audit   'p-map': [ '7.0.4' ],
+37 silly audit   'package-json-from-dist': [ '1.0.1' ],
+37 silly audit   picomatch: [ '4.0.3' ],
+37 silly audit   'read-cmd-shim': [ '5.0.0' ],
+37 silly audit   'read-package-json-fast': [ '4.0.0' ],
+37 silly audit   retry: [ '0.12.0' ],
+37 silly audit   'qrcode-terminal': [ '0.12.0' ],
+37 silly audit   promzard: [ '2.0.0' ],
+37 silly audit   'signal-exit': [ '4.1.0' ],
+37 silly audit   sigstore: [ '3.1.0' ],
+37 silly audit   'socks-proxy-agent': [ '8.0.5' ],
+37 silly audit   'shebang-command': [ '2.0.0' ],
+37 silly audit   'shebang-regex': [ '3.0.0' ],
+37 silly audit   'spdx-correct': [ '3.2.0' ],
+37 silly audit   ssri: [ '12.0.0' ],
+37 silly audit   'spdx-exceptions': [ '2.5.0' ],
+37 silly audit   'spdx-license-ids': [ '3.0.23' ],
+37 silly audit   treeverse: [ '3.0.0' ],
+37 silly audit   'tuf-js': [ '3.1.0' ],
+37 silly audit   '@tufjs/models': [ '3.0.1' ],
+37 silly audit   'unique-filename': [ '4.0.0' ],
+37 silly audit   'unique-slug': [ '5.0.0' ],
+37 silly audit   'tiny-relative-date': [ '1.3.0' ],
+37 silly audit   'text-table': [ '0.2.0' ],
+37 silly audit   'walk-up-path': [ '3.0.1' ],
+37 silly audit   tinyglobby: [ '0.2.15' ],
+37 silly audit   'write-file-atomic': [ '6.0.0' ],
+37 silly audit   'validate-npm-package-license': [ '3.0.4' ],
+37 silly audit   '@isaacs/string-locale-compare': [ '1.1.0' ],
+37 silly audit   '@npmcli/arborist': [ '8.0.5' ],
+37 silly audit   '@npmcli/agent': [ '3.0.0' ],
+37 silly audit   '@npmcli/config': [ '9.0.0' ],
+37 silly audit   '@npmcli/fs': [ '4.0.0' ],
+37 silly audit   '@npmcli/installed-package-contents': [ '3.0.0' ],
+37 silly audit   '@npmcli/git': [ '6.0.3' ],
+37 silly audit   '@npmcli/map-workspaces': [ '4.0.2' ],
+37 silly audit   '@npmcli/metavuln-calculator': [ '8.0.1' ],
+37 silly audit   '@npmcli/name-from-folder': [ '3.0.0' ],
+37 silly audit   '@npmcli/node-gyp': [ '4.0.0' ],
+37 silly audit   '@npmcli/package-json': [ '6.2.0' ],
+37 silly audit   '@npmcli/query': [ '4.0.1' ],
+37 silly audit   '@npmcli/promise-spawn': [ '8.0.3' ],
+37 silly audit   '@npmcli/run-script': [ '9.1.0' ],
+37 silly audit   '@npmcli/redact': [ '3.2.2' ],
+37 silly audit   '@sigstore/bundle': [ '3.1.0' ],
+37 silly audit   '@sigstore/core': [ '2.0.0' ],
+37 silly audit   '@sigstore/protobuf-specs': [ '0.4.3' ],
+37 silly audit   '@sigstore/sign': [ '3.1.0' ],
+37 silly audit   '@sigstore/tuf': [ '3.1.1' ],
+37 silly audit   '@sigstore/verify': [ '2.1.1' ],
+37 silly audit   '@tufjs/canonical-json': [ '2.0.0' ],
+37 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+37 silly audit   '@pkgjs/parseargs': [ '0.11.0' ]
+37 silly audit }
+38 http cache lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz 0ms (cache hit)
+39 http cache influx@https://registry.npmjs.org/influx/-/influx-5.9.7.tgz 0ms (cache hit)
+40 http cache @influxdata/influxdb-client@https://registry.npmjs.org/@influxdata/influxdb-client/-/influxdb-client-1.33.2.tgz 0ms (cache hit)
+41 http cache node-red-contrib-influxdb@https://registry.npmjs.org/node-red-contrib-influxdb/-/node-red-contrib-influxdb-0.7.0.tgz 0ms (cache hit)
+42 silly tarball no local data for lodash@https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz. Extracting by manifest.
+43 silly tarball no local data for influx@https://registry.npmjs.org/influx/-/influx-5.9.7.tgz. Extracting by manifest.
+44 silly tarball no local data for @influxdata/influxdb-client@https://registry.npmjs.org/@influxdata/influxdb-client/-/influxdb-client-1.33.2.tgz. Extracting by manifest.
+45 silly tarball no local data for node-red-contrib-influxdb@https://registry.npmjs.org/node-red-contrib-influxdb/-/node-red-contrib-influxdb-0.7.0.tgz. Extracting by manifest.
+46 http fetch GET 200 https://registry.npmjs.org/influx/-/influx-5.9.7.tgz 170ms (cache miss)
+47 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-influxdb/-/node-red-contrib-influxdb-0.7.0.tgz 202ms (cache miss)
+48 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 221ms
+49 silly audit report {
+49 silly audit report   'ip-address': [
+49 silly audit report     {
+49 silly audit report       id: 1118827,
+49 silly audit report       url: 'https://github.com/advisories/GHSA-v2v4-37r5-5v8g',
+49 silly audit report       title: 'ip-address has XSS in Address6 HTML-emitting methods',
+49 silly audit report       severity: 'moderate',
+49 silly audit report       vulnerable_versions: '<=10.1.0',
+49 silly audit report       cwe: [Array],
+49 silly audit report       cvss: [Object]
+49 silly audit report     }
+49 silly audit report   ],
+49 silly audit report   lodash: [
+49 silly audit report     {
+49 silly audit report       id: 1115806,
+49 silly audit report       url: 'https://github.com/advisories/GHSA-r5fr-rjxr-66jc',
+49 silly audit report       title: 'lodash vulnerable to Code Injection via `_.template` imports key names',
+49 silly audit report       severity: 'high',
+49 silly audit report       vulnerable_versions: '>=4.0.0 <=4.17.23',
+49 silly audit report       cwe: [Array],
+49 silly audit report       cvss: [Object]
+49 silly audit report     },
+49 silly audit report     {
+49 silly audit report       id: 1115810,
+49 silly audit report       url: 'https://github.com/advisories/GHSA-f23m-r3pf-42rh',
+49 silly audit report       title: 'lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`',
+49 silly audit report       severity: 'moderate',
+49 silly audit report       vulnerable_versions: '<=4.17.23',
+49 silly audit report       cwe: [Array],
+49 silly audit report       cvss: [Object]
+49 silly audit report     }
+49 silly audit report   ],
+49 silly audit report   'brace-expansion': [
+49 silly audit report     {
+49 silly audit report       id: 1115541,
+49 silly audit report       url: 'https://github.com/advisories/GHSA-f886-m6hf-6m8v',
+49 silly audit report       title: 'brace-expansion: Zero-step sequence causes process hang and memory exhaustion',
+49 silly audit report       severity: 'moderate',
+49 silly audit report       vulnerable_versions: '>=2.0.0 <2.0.3',
+49 silly audit report       cwe: [Array],
+49 silly audit report       cvss: [Object]
+49 silly audit report     }
+49 silly audit report   ],
+49 silly audit report   picomatch: [
+49 silly audit report     {
+49 silly audit report       id: 1115551,
+49 silly audit report       url: 'https://github.com/advisories/GHSA-3v7f-55p6-f55p',
+49 silly audit report       title: 'Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching',
+49 silly audit report       severity: 'moderate',
+49 silly audit report       vulnerable_versions: '>=4.0.0 <4.0.4',
+49 silly audit report       cwe: [Array],
+49 silly audit report       cvss: [Object]
+49 silly audit report     },
+49 silly audit report     {
+49 silly audit report       id: 1115554,
+49 silly audit report       url: 'https://github.com/advisories/GHSA-c2c7-rcm5-vvqj',
+49 silly audit report       title: 'Picomatch has a ReDoS vulnerability via extglob quantifiers',
+49 silly audit report       severity: 'high',
+49 silly audit report       vulnerable_versions: '>=4.0.0 <4.0.4',
+49 silly audit report       cwe: [Array],
+49 silly audit report       cvss: [Object]
+49 silly audit report     }
+49 silly audit report   ]
+49 silly audit report }
+50 silly packumentCache corgi:https://registry.npmjs.org/ip-address cache-miss
+51 silly packumentCache corgi:https://registry.npmjs.org/lodash cache-miss
+52 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion cache-miss
+53 silly packumentCache corgi:https://registry.npmjs.org/picomatch cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/ip-address 98ms (cache miss)
+55 silly packumentCache corgi:https://registry.npmjs.org/ip-address set size:undefined disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/brace-expansion 102ms (cache miss)
+57 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion set size:undefined disposed:false
+58 http fetch GET 200 https://registry.npmjs.org/lodash 114ms (cache miss)
+59 silly packumentCache corgi:https://registry.npmjs.org/lodash set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/picomatch 120ms (cache miss)
+61 silly packumentCache corgi:https://registry.npmjs.org/picomatch set size:undefined disposed:false
+62 silly packumentCache corgi:https://registry.npmjs.org/socks cache-miss
+63 http fetch GET 200 https://registry.npmjs.org/socks 61ms (cache miss)
+64 silly packumentCache corgi:https://registry.npmjs.org/socks set size:undefined disposed:false
+65 http fetch GET 200 https://registry.npmjs.org/@influxdata/influxdb-client/-/influxdb-client-1.33.2.tgz 470ms (cache miss)
+66 silly packumentCache corgi:https://registry.npmjs.org/node-red-contrib-influxdb cache-miss
+67 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz 641ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-influxdb 319ms (cache miss)
+69 silly packumentCache corgi:https://registry.npmjs.org/node-red-contrib-influxdb set size:undefined disposed:false
+70 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+71 http fetch GET 200 https://registry.npmjs.org/minimatch 112ms (cache miss)
+72 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+73 silly packumentCache corgi:https://registry.npmjs.org/fdir cache-miss
+74 silly packumentCache corgi:https://registry.npmjs.org/tinyglobby cache-miss
+75 http fetch GET 200 https://registry.npmjs.org/tinyglobby 69ms (cache miss)
+76 silly packumentCache corgi:https://registry.npmjs.org/tinyglobby set size:undefined disposed:false
+77 http fetch GET 200 https://registry.npmjs.org/fdir 73ms (cache miss)
+78 silly packumentCache corgi:https://registry.npmjs.org/fdir set size:undefined disposed:false
+79 silly ADD node_modules/lodash
+80 silly ADD node_modules/influx
+81 silly ADD node_modules/@influxdata/influxdb-client
+82 silly ADD node_modules/node-red-contrib-influxdb
+83 verbose cwd /usr/src/node-red
+84 verbose os Linux 6.6.114.1-microsoft-standard-WSL2
+85 verbose node v20.20.2
+86 verbose npm  v10.9.8
+87 notice
+87 notice New [31mmajor[39m version of npm available! [31m10.9.8[39m -> [34m11.16.0[39m
+87 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.16.0[39m
+87 notice To update run: [4mnpm install -g npm@11.16.0[24m
+87 notice  { force: true, [Symbol(proc-log.meta)]: true }
+88 verbose exit 0
+89 info ok
