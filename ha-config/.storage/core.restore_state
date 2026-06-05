@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2026-06-05T15:41:43.931916+00:00","last_reported":"2026-06-05T15:41:43.931916+00:00","last_updated":"2026-06-05T15:41:43.931916+00:00","context":{"id":"01KTC752KV36P85EG1FCZF6E1F","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+    },
+    {
+      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2026-06-05T15:41:44.035896+00:00","last_reported":"2026-06-05T15:41:44.035896+00:00","last_updated":"2026-06-05T15:41:44.035896+00:00","context":{"id":"01KTC752Q3VBGPESNB22NFF83G","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "last_event_type": null,
+        "last_event_attributes": null
+      },
+      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+    },
+    {
+      "state": {"entity_id":"person.kacper","state":"unknown","attributes":{"editable":true,"id":"kacper","device_trackers":[],"in_zones":[],"user_id":"5a066cf2c42f451994e690f92fadf5d2","friendly_name":"Kacper"},"last_changed":"2026-06-05T15:46:44.261911+00:00","last_reported":"2026-06-05T15:46:44.262121+00:00","last_updated":"2026-06-05T15:46:44.261911+00:00","context":{"id":"01KTC7E7X5D9RY1C92R8YV67QH","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2026-06-05T15:47:54.297389+00:00","last_reported":"2026-06-05T15:47:54.297498+00:00","last_updated":"2026-06-05T15:47:54.297389+00:00","context":{"id":"01KTC7GC9SYQ7NBXD36DXGQWDG","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+    }
+  ]
+}

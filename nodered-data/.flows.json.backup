@@ -1,0 +1,123 @@
+[
+    {
+        "id": "92e6400d7068ca5b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "broker_mosquitto",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "mosquitto",
+        "port": "1883",
+        "clientid": "nodered_client",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true
+    },
+    {
+        "id": "inject_mieszkanie",
+        "type": "inject",
+        "z": "92e6400d7068ca5b",
+        "name": "Co 10s - Mieszkanie",
+        "repeat": "10",
+        "once": true,
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "func_mieszkanie"
+            ]
+        ]
+    },
+    {
+        "id": "func_mieszkanie",
+        "type": "function",
+        "z": "92e6400d7068ca5b",
+        "name": "Symulacja Mieszkanie",
+        "func": "const hour = new Date().getHours();\nlet base = 0.1;\nif (hour >= 6 && hour < 9) base = 1.8;\nelse if (hour >= 9 && hour < 17) base = 0.4;\nelse if (hour >= 17 && hour < 23) base = 2.2;\nelse base = 0.1;\nconst power = +(base + (Math.random() * 0.4 - 0.2)).toFixed(2);\nmsg.payload = JSON.stringify({ power: power, location: 'mieszkanie' });\nmsg.topic = 'home/energy/mieszkanie';\nreturn msg;",
+        "outputs": 1,
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "mqtt_out"
+            ]
+        ]
+    },
+    {
+        "id": "inject_biuro",
+        "type": "inject",
+        "z": "92e6400d7068ca5b",
+        "name": "Co 10s - Biuro",
+        "repeat": "10",
+        "once": true,
+        "x": 1160,
+        "y": 460,
+        "wires": [
+            [
+                "func_biuro"
+            ]
+        ]
+    },
+    {
+        "id": "func_biuro",
+        "type": "function",
+        "z": "92e6400d7068ca5b",
+        "name": "Symulacja Biuro",
+        "func": "const hour = new Date().getHours();\nconst day = new Date().getDay();\nlet base = 0.05;\nif (day >= 1 && day <= 5) {\n  if (hour >= 8 && hour < 17) base = 3.5;\n  else if (hour >= 7 && hour < 8) base = 1.0;\n  else if (hour >= 17 && hour < 18) base = 1.0;\n}\nconst power = +(base + (Math.random() * 0.5 - 0.25)).toFixed(2);\nmsg.payload = JSON.stringify({ power: Math.max(0, power), location: 'biuro' });\nmsg.topic = 'home/energy/biuro';\nreturn msg;",
+        "outputs": 1,
+        "x": 1140,
+        "y": 300,
+        "wires": [
+            [
+                "mqtt_out"
+            ]
+        ]
+    },
+    {
+        "id": "inject_hala",
+        "type": "inject",
+        "z": "92e6400d7068ca5b",
+        "name": "Co 10s - Hala",
+        "repeat": "10",
+        "once": true,
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "func_hala"
+            ]
+        ]
+    },
+    {
+        "id": "func_hala",
+        "type": "function",
+        "z": "92e6400d7068ca5b",
+        "name": "Symulacja Hala Produkcyjna",
+        "func": "const hour = new Date().getHours();\nlet base = 0.5;\nif (hour >= 6 && hour < 14) base = 15.0;\nelse if (hour >= 14 && hour < 22) base = 12.0;\nelse base = 2.0;\nconst power = +(base + (Math.random() * 2.0 - 1.0)).toFixed(2);\nmsg.payload = JSON.stringify({ power: Math.max(0, power), location: 'hala' });\nmsg.topic = 'home/energy/hala';\nreturn msg;",
+        "outputs": 1,
+        "x": 580,
+        "y": 360,
+        "wires": [
+            [
+                "mqtt_out"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out",
+        "type": "mqtt out",
+        "z": "92e6400d7068ca5b",
+        "name": "MQTT Mosquitto",
+        "topic": "",
+        "broker": "broker_mosquitto",
+        "x": 570,
+        "y": 140,
+        "wires": []
+    }
+]
