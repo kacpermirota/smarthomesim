@@ -1,1 +1,120 @@
-[]
+- id: '1'
+  alias: "Eliminacja standby - salon"
+  description: "Brak ruchu w salonie przez 30 min - wyłącz GS-TV"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.cr_salon
+      to: "off"
+      for:
+        minutes: 30
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.gs_tv
+  mode: single
+
+- id: '2'
+  alias: "Tryb poza domem"
+  description: "Drzwi zamknięte + brak ruchu 10 min - wyłącz wszystko"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.kd_drzwi
+      to: "off"
+      for:
+        minutes: 10
+  condition:
+    - condition: state
+      entity_id: input_boolean.cr_salon
+      state: "off"
+    - condition: state
+      entity_id: input_boolean.cr_korytarz
+      state: "off"
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id:
+          - input_boolean.gs_tv
+          - input_boolean.gs_agd
+          - input_boolean.gs_lap
+          - input_boolean.gs_osw
+  mode: single
+
+- id: '3'
+  alias: "Harmonogram nocny - wyłącz laptop"
+  description: "O 23:00 wyłącz GS-LAP"
+  trigger:
+    - platform: time
+      at: "23:00:00"
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.gs_lap
+  mode: single
+
+- id: '4'
+  alias: "Harmonogram poranny - włącz laptop"
+  description: "O 06:00 włącz GS-LAP"
+  trigger:
+    - platform: time
+      at: "06:00:00"
+  action:
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.gs_lap
+  mode: single
+
+- id: '5'
+  alias: "Powrót do domu"
+  description: "Ruch w korytarzu - włącz gniazdka"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.cr_korytarz
+      to: "on"
+  action:
+    - service: input_boolean.turn_on
+      target:
+        entity_id:
+          - input_boolean.gs_tv
+          - input_boolean.gs_osw
+  mode: single
+
+- id: '6'
+  alias: "Harmonogram biuro - wyłącz po godzinach"
+  description: "O 18:00 wyłącz komputery w biurze"
+  trigger:
+    - platform: time
+      at: "18:00:00"
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id:
+          - input_boolean.gs_pc
+          - input_boolean.gs_klim
+  mode: single
+
+- id: '7'
+  alias: "Harmonogram biuro - włącz rano"
+  description: "O 07:00 włącz komputery w biurze"
+  trigger:
+    - platform: time
+      at: "07:00:00"
+  action:
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.gs_pc
+  mode: single
+
+- id: '8'
+  alias: "Pustostan sali konferencyjnej"
+  description: "Brak ruchu w salonie 15 min - wyłącz klimatyzację"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.cr_salon
+      to: "off"
+      for:
+        minutes: 15
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.gs_klim
+  mode: single

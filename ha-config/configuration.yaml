@@ -1,4 +1,3 @@
-
 # Loads default set of integrations. Do not remove.
 default_config:
 
@@ -9,3 +8,53 @@ frontend:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
+input_boolean:
+  gs_tv:
+    name: GS-TV (TV + dekoder)
+    icon: mdi:television
+  gs_agd:
+    name: GS-AGD (Ekspres / czajnik)
+    icon: mdi:coffee-maker
+  gs_lap:
+    name: GS-LAP (Laptop / ładowarka)
+    icon: mdi:laptop
+  gs_osw:
+    name: OSW (Oświetlenie salon)
+    icon: mdi:lightbulb
+  gs_pc:
+    name: GS-PC (Monitory / komputery)
+    icon: mdi:monitor
+  gs_klim:
+    name: GS-KLIM (Klimatyzacja / projektor)
+    icon: mdi:air-conditioner
+  gs_mag:
+    name: GS-MAG (Oświetlenie magazyn)
+    icon: mdi:warehouse
+  cr_salon:
+    name: CR Salon
+    icon: mdi:motion-sensor
+  cr_korytarz:
+    name: CR Korytarz
+    icon: mdi:motion-sensor
+  kd_drzwi:
+    name: KD Drzwi wejściowe
+    icon: mdi:door
+
+mqtt:
+  sensor:
+    - name: "Energia Mieszkanie"
+      state_topic: "home/energy/mieszkanie"
+      value_template: "{{ value_json.power }}"
+      unit_of_measurement: "kW"
+      device_class: power
+    - name: "Energia Biuro"
+      state_topic: "home/energy/biuro"
+      value_template: "{{ value_json.power }}"
+      unit_of_measurement: "kW"
+      device_class: power
+    - name: "Energia Hala"
+      state_topic: "home/energy/hala"
+      value_template: "{{ value_json.power }}"
+      unit_of_measurement: "kW"
+      device_class: power
