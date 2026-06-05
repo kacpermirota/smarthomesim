@@ -1,0 +1,111 @@
+1780672714: mosquitto version 2.1.2 starting
+1780672714: Config loaded from /mosquitto/config/mosquitto.conf.
+1780672714: Bridge support available.
+1780672714: Persistence support available.
+1780672714: TLS support available.
+1780672714: TLS-PSK support available.
+1780672714: Websockets support available.
+1780672714: Opening ipv4 listen socket on port 1883.
+1780672714: Opening ipv6 listen socket on port 1883.
+1780672714: Opening ipv4 listen socket on port 9001.
+1780672714: Opening ipv6 listen socket on port 9001.
+1780672714: mosquitto version 2.1.2 running
+1780673052: New connection from 172.18.0.1:52362 on port 1883.
+1780673052: Protocol error from 172.18.0.1:52362: First packet not CONNECT (47).
+1780673052: Client 172.18.0.1 [172.18.0.1:52362] disconnected: protocol error.
+1780673053: New connection from 172.18.0.1:43020 on port 1883.
+1780673053: Protocol error from 172.18.0.1:43020: First packet not CONNECT (47).
+1780673053: Client 172.18.0.1 [172.18.0.1:43020] disconnected: protocol error.
+1780673055: New connection from 172.18.0.1:59272 on port 9001.
+1780673055: Client 172.18.0.1 [172.18.0.1:59272] disconnected: bad socket read/write: Unknown error
+1780673056: New connection from 172.18.0.1:59288 on port 9001.
+1780673056: Client 172.18.0.1 [172.18.0.1:59288] disconnected: bad socket read/write: Unknown error
+1780673098: New connection from 172.18.0.1:58094 on port 9001.
+1780673098: Client 172.18.0.1 [172.18.0.1:58094] disconnected: bad socket read/write: Unknown error
+1780673099: New connection from 172.18.0.1:58104 on port 9001.
+1780673099: Client 172.18.0.1 [172.18.0.1:58104] disconnected: bad socket read/write: Unknown error
+1780673454: New connection from 172.18.0.1:39820 on port 1883.
+1780673454: Protocol error from 172.18.0.1:39820: First packet not CONNECT (47).
+1780673454: Client 172.18.0.1 [172.18.0.1:39820] disconnected: protocol error.
+1780673455: New connection from 172.18.0.1:39822 on port 1883.
+1780673455: Protocol error from 172.18.0.1:39822: First packet not CONNECT (47).
+1780673455: Client 172.18.0.1 [172.18.0.1:39822] disconnected: protocol error.
+1780673456: New connection from 172.18.0.1:48254 on port 9001.
+1780673456: Client 172.18.0.1 [172.18.0.1:48254] disconnected: bad socket read/write: Unknown error
+1780673457: New connection from 172.18.0.1:48260 on port 9001.
+1780673457: Client 172.18.0.1 [172.18.0.1:48260] disconnected: bad socket read/write: Unknown error
+1780674146: New connection from 172.18.0.1:33482 on port 1883.
+1780674146: Protocol error from 172.18.0.1:33482: First packet not CONNECT (47).
+1780674146: Client 172.18.0.1 [172.18.0.1:33482] disconnected: protocol error.
+1780674147: New connection from 172.18.0.1:33488 on port 1883.
+1780674147: Protocol error from 172.18.0.1:33488: First packet not CONNECT (47).
+1780674147: Client 172.18.0.1 [172.18.0.1:33488] disconnected: protocol error.
+1780674148: New connection from 172.18.0.1:36684 on port 9001.
+1780674148: Client 172.18.0.1 [172.18.0.1:36684] disconnected: bad socket read/write: Unknown error
+1780674514: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780674735: New connection from 172.18.0.6:37085 on port 1883.
+1780674735: New client connected from 172.18.0.6:37085 as 0lughjpJiWaNk4KZGn77SQ (p5, c1, k60).
+1780674735: Client 0lughjpJiWaNk4KZGn77SQ [172.18.0.6:37085] disconnected.
+1780674735: New connection from 172.18.0.6:33551 on port 1883.
+1780674735: New client connected from 172.18.0.6:33551 as 5fGSSvXY5RX7VgvN63q3yy (p5, c1, k60).
+1780675332: New connection from 172.18.0.5:47234 on port 1883.
+1780675332: New client connected from 172.18.0.5:47234 as nodered_client (p4, c1, k60).
+1780676082: Client nodered_client [172.18.0.5:47234] disconnected.
+1780676084: New connection from 172.18.0.5:47646 on port 1883.
+1780676084: New client connected from 172.18.0.5:47646 as nodered_client (p4, c1, k60).
+1780676315: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780676392: Client nodered_client [172.18.0.5:47646] disconnected.
+1780676392: New connection from 172.18.0.5:49422 on port 1883.
+1780676392: New client connected from 172.18.0.5:49422 as nodered_client (p4, c1, k60).
+1780678116: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780679941: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780681742: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780683543: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780685344: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780687145: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780688946: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780690746: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780692547: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780692735: Client nodered_client [172.18.0.5:49422] disconnected.
+1780692736: Client 5fGSSvXY5RX7VgvN63q3yy [172.18.0.6:33551] disconnected: connection closed by client.
+1780692736: mosquitto version 2.1.2 terminating
+1780692736: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780692816: mosquitto version 2.1.2 starting
+1780692816: Config loaded from /mosquitto/config/mosquitto.conf.
+1780692816: Bridge support available.
+1780692816: Persistence support available.
+1780692816: TLS support available.
+1780692816: TLS-PSK support available.
+1780692816: Websockets support available.
+1780692816: Opening ipv4 listen socket on port 1883.
+1780692816: Opening ipv6 listen socket on port 1883.
+1780692816: Opening ipv4 listen socket on port 9001.
+1780692816: Opening ipv6 listen socket on port 9001.
+1780692816: mosquitto version 2.1.2 running
+1780692819: New connection from 172.18.0.5:34948 on port 1883.
+1780692819: New client connected from 172.18.0.5:34948 as nodered_client (p4, c1, k60).
+1780692825: New connection from 172.18.0.6:39885 on port 1883.
+1780692825: New client connected from 172.18.0.6:39885 as 0HdCAhK6CtrlsFwJQXqpsn (p5, c1, k60).
+1780693497: Client nodered_client [172.18.0.5:34948] disconnected.
+1780693498: Client 0HdCAhK6CtrlsFwJQXqpsn [172.18.0.6:39885] disconnected: connection closed by client.
+1780693498: mosquitto version 2.1.2 terminating
+1780693498: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1780693507: mosquitto version 2.1.2 starting
+1780693507: Config loaded from /mosquitto/config/mosquitto.conf.
+1780693507: Bridge support available.
+1780693507: Persistence support available.
+1780693507: TLS support available.
+1780693507: TLS-PSK support available.
+1780693507: Websockets support available.
+1780693507: Opening ipv4 listen socket on port 1883.
+1780693507: Opening ipv6 listen socket on port 1883.
+1780693507: Opening ipv4 listen socket on port 9001.
+1780693507: Opening ipv6 listen socket on port 9001.
+1780693507: mosquitto version 2.1.2 running
+1780693509: New connection from 172.18.0.6:38276 on port 1883.
+1780693509: New client connected from 172.18.0.6:38276 as nodered_client (p4, c1, k60).
+1780693515: New connection from 172.18.0.5:33541 on port 1883.
+1780693515: New client connected from 172.18.0.5:33541 as 4B69lCNmqgGT01hSXY6vM3 (p5, c1, k60).
+1780693683: Client 4B69lCNmqgGT01hSXY6vM3 [172.18.0.5:33541] disconnected: connection closed by client.
+1780693689: New connection from 172.18.0.5:38173 on port 1883.
+1780693689: New client connected from 172.18.0.5:38173 as 2B20wB1YkFnLUUAVRJ8EaR (p5, c1, k60).

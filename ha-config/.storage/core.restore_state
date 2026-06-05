@@ -4,27 +4,101 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2026-06-05T15:41:43.931916+00:00","last_reported":"2026-06-05T15:41:43.931916+00:00","last_updated":"2026-06-05T15:41:43.931916+00:00","context":{"id":"01KTC752KV36P85EG1FCZF6E1F","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2026-06-05T21:08:07.040499+00:00","last_reported":"2026-06-05T21:08:07.040499+00:00","last_updated":"2026-06-05T21:08:07.040499+00:00","context":{"id":"01KTCSTPR040T4VPRR0VTQRPFK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
     },
     {
-      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2026-06-05T15:41:44.035896+00:00","last_reported":"2026-06-05T15:41:44.035896+00:00","last_updated":"2026-06-05T15:41:44.035896+00:00","context":{"id":"01KTC752Q3VBGPESNB22NFF83G","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatyczna kopia zapasowa"},"last_changed":"2026-06-05T21:08:07.172966+00:00","last_reported":"2026-06-05T21:08:07.172966+00:00","last_updated":"2026-06-05T21:08:07.172966+00:00","context":{"id":"01KTCSTPW49BF4G39SEGYDEN79","parent_id":null,"user_id":null}},
       "extra_data": {
         "last_event_type": null,
         "last_event_attributes": null
       },
-      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
     },
     {
-      "state": {"entity_id":"person.kacper","state":"unknown","attributes":{"editable":true,"id":"kacper","device_trackers":[],"in_zones":[],"user_id":"5a066cf2c42f451994e690f92fadf5d2","friendly_name":"Kacper"},"last_changed":"2026-06-05T15:46:44.261911+00:00","last_reported":"2026-06-05T15:46:44.262121+00:00","last_updated":"2026-06-05T15:46:44.261911+00:00","context":{"id":"01KTC7E7X5D9RY1C92R8YV67QH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.kacper","state":"unknown","attributes":{"editable":true,"id":"kacper","device_trackers":[],"in_zones":[],"source":"person.kacper","user_id":"5a066cf2c42f451994e690f92fadf5d2","friendly_name":"Kacper"},"last_changed":"2026-06-05T21:08:07.417964+00:00","last_reported":"2026-06-05T21:08:07.417964+00:00","last_updated":"2026-06-05T21:08:07.417964+00:00","context":{"id":"01KTCSTQ3SSN3710EF3H6RP0T3","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2026-06-05T15:47:54.297389+00:00","last_reported":"2026-06-05T15:47:54.297498+00:00","last_updated":"2026-06-05T15:47:54.297389+00:00","context":{"id":"01KTC7GC9SYQ7NBXD36DXGQWDG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_boolean.gs_tv","state":"off","attributes":{"editable":false,"icon":"mdi:television","friendly_name":"GS-TV (TV + dekoder)"},"last_changed":"2026-06-05T21:08:07.418777+00:00","last_reported":"2026-06-05T21:08:07.418777+00:00","last_updated":"2026-06-05T21:08:07.418777+00:00","context":{"id":"01KTCSTQ3T8MJ9AFZH2VCJS64Q","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2026-06-05T17:57:10.414713+00:00"
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.gs_agd","state":"off","attributes":{"editable":false,"icon":"mdi:coffee-maker","friendly_name":"GS-AGD (Ekspres / czajnik)"},"last_changed":"2026-06-05T21:08:07.418948+00:00","last_reported":"2026-06-05T21:08:07.418948+00:00","last_updated":"2026-06-05T21:08:07.418948+00:00","context":{"id":"01KTCSTQ3TJJVSYF1EW2A3GPAJ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.gs_lap","state":"off","attributes":{"editable":false,"icon":"mdi:laptop","friendly_name":"GS-LAP (Laptop / ładowarka)"},"last_changed":"2026-06-05T21:08:07.419076+00:00","last_reported":"2026-06-05T21:08:07.419076+00:00","last_updated":"2026-06-05T21:08:07.419076+00:00","context":{"id":"01KTCSTQ3VYF383ASXP7HDWWDR","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.gs_osw","state":"off","attributes":{"editable":false,"icon":"mdi:lightbulb","friendly_name":"OSW (Oświetlenie salon)"},"last_changed":"2026-06-05T21:08:07.419189+00:00","last_reported":"2026-06-05T21:08:07.419189+00:00","last_updated":"2026-06-05T21:08:07.419189+00:00","context":{"id":"01KTCSTQ3V2XPBHTX245J7ZFB5","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.gs_pc","state":"off","attributes":{"editable":false,"icon":"mdi:monitor","friendly_name":"GS-PC (Monitory / komputery)"},"last_changed":"2026-06-05T21:08:07.419370+00:00","last_reported":"2026-06-05T21:08:07.419370+00:00","last_updated":"2026-06-05T21:08:07.419370+00:00","context":{"id":"01KTCSTQ3V833SV69TNBHRM6N4","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.gs_klim","state":"off","attributes":{"editable":false,"icon":"mdi:air-conditioner","friendly_name":"GS-KLIM (Klimatyzacja / projektor)"},"last_changed":"2026-06-05T21:08:07.419537+00:00","last_reported":"2026-06-05T21:08:07.419537+00:00","last_updated":"2026-06-05T21:08:07.419537+00:00","context":{"id":"01KTCSTQ3VG5HK42S8J1T5KQ9G","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.gs_mag","state":"off","attributes":{"editable":false,"icon":"mdi:warehouse","friendly_name":"GS-MAG (Oświetlenie magazyn)"},"last_changed":"2026-06-05T21:08:07.419663+00:00","last_reported":"2026-06-05T21:08:07.419663+00:00","last_updated":"2026-06-05T21:08:07.419663+00:00","context":{"id":"01KTCSTQ3V03J81B1Z3T0TTH22","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.cr_salon","state":"off","attributes":{"editable":false,"icon":"mdi:motion-sensor","friendly_name":"CR Salon"},"last_changed":"2026-06-05T21:08:07.419742+00:00","last_reported":"2026-06-05T21:08:07.419742+00:00","last_updated":"2026-06-05T21:08:07.419742+00:00","context":{"id":"01KTCSTQ3VP5CHC0R142ED3D75","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.cr_korytarz","state":"off","attributes":{"editable":false,"icon":"mdi:motion-sensor","friendly_name":"CR Korytarz"},"last_changed":"2026-06-05T21:08:07.419806+00:00","last_reported":"2026-06-05T21:08:07.419806+00:00","last_updated":"2026-06-05T21:08:07.419806+00:00","context":{"id":"01KTCSTQ3V0KY7P6EDC7YYSG7M","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"input_boolean.kd_drzwi","state":"off","attributes":{"editable":false,"icon":"mdi:door","friendly_name":"KD Drzwi wejściowe"},"last_changed":"2026-06-05T21:08:07.419863+00:00","last_reported":"2026-06-05T21:08:07.419863+00:00","last_updated":"2026-06-05T21:08:07.419863+00:00","context":{"id":"01KTCSTQ3VD83GFQ9860AVAAF3","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2026-06-05T21:08:09.107095+00:00","last_reported":"2026-06-05T21:08:09.107095+00:00","last_updated":"2026-06-05T21:08:09.107095+00:00","context":{"id":"01KTCSTRRKKKNCBSJ4KJDKXRS0","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.energia_mieszkanie","state":"unknown","attributes":{"unit_of_measurement":"kW","device_class":"power","friendly_name":"Energia Mieszkanie"},"last_changed":"2026-06-05T21:08:09.120445+00:00","last_reported":"2026-06-05T21:08:09.120445+00:00","last_updated":"2026-06-05T21:08:09.120445+00:00","context":{"id":"01KTCSTRS0JY14P9SRRDQXV8EP","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "kW"
+      },
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.energia_biuro","state":"unknown","attributes":{"unit_of_measurement":"kW","device_class":"power","friendly_name":"Energia Biuro"},"last_changed":"2026-06-05T21:08:09.120542+00:00","last_reported":"2026-06-05T21:08:09.120542+00:00","last_updated":"2026-06-05T21:08:09.120542+00:00","context":{"id":"01KTCSTRS0P6BJW6TNJSMDC0M1","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "kW"
+      },
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.energia_hala","state":"unknown","attributes":{"unit_of_measurement":"kW","device_class":"power","friendly_name":"Energia Hala"},"last_changed":"2026-06-05T21:08:09.120576+00:00","last_reported":"2026-06-05T21:08:09.120576+00:00","last_updated":"2026-06-05T21:08:09.120576+00:00","context":{"id":"01KTCSTRS0P3GG8MEXJDXWXEDE","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "kW"
+      },
+      "last_seen": "2026-06-05T21:08:09.297392+00:00"
     }
   ]
 }
